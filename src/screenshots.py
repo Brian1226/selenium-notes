@@ -10,14 +10,14 @@ class ScreenshotsTest():
         driver.get('https://demoqa.com/text-box')
 
         # screenshot before filling out form
-        driver.save_screenshot('screenshots/before.png')
+        driver.save_screenshot('my_screenshots/before.png')
 
         driver.find_element(By.ID, 'userName').send_keys('Brian')
         driver.find_element(By.ID, 'userEmail').send_keys('test_email89@gmail.com')
         driver.find_element(By.ID, 'submit').click()
 
         # screenshot after filling out form
-        driver.save_screenshot('screenshots/after.png')
+        driver.save_screenshot('my_screenshots/after.png')
 
         driver.quit()
 

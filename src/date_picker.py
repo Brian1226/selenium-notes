@@ -9,7 +9,6 @@ class DatePickerTest():
     def test(self):
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service)
-        
         driver.get('https://demoqa.com/date-picker')
 
         # click on input field

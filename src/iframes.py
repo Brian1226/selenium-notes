@@ -25,6 +25,7 @@ class IFramesTest():
         driver.switch_to.frame(0)
         child_text = driver.find_element(By.XPATH, "//p[normalize-space()='Child Iframe']").text
         print(child_text)
+        driver.switch_to.default_content()
 
         driver.quit()
 

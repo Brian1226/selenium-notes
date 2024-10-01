@@ -11,6 +11,7 @@ class FormTest():
         driver.get('https://demoqa.com/automation-practice-form')
 
         # textbox
+        # clear textbox using .clear()
         driver.find_element(By.ID, 'firstName').send_keys('Brian')
         driver.find_element(By.ID, 'lastName').send_keys('Nguyen')
         driver.find_element(By.ID, 'userEmail').send_keys('test_email89@gmail.com')
